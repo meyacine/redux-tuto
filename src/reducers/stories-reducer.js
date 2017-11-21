@@ -17,6 +17,7 @@ const initialState = {
 
 // le reducer prend un state, et une action. Il fait le routage des actions
 export function storiesReducer(state = initialState, action) {
+    console.log('reducer ', action.type);
     switch (action.type) {
         case StoriesActionsEnum.LOAD_DATA :
             return {items: stories};
