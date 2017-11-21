@@ -8,8 +8,8 @@ import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-// j'importe le StoriesReducer sous le nom de reducer
-import reducer from './reducers/Stories';
+// j'importe le storiesReducer sous le nom de reducer
+import reducer from './reducers/stories-reducer';
 
 // je crée un store en partant du reducer
 const store = createStore(reducer);
