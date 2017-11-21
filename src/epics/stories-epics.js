@@ -4,6 +4,7 @@ import {cancel, StoriesActionsEnum} from "../actions/stories-actions";
 
 
 function loadStoriesEpic(action$) {
+    // Chaque fois que l'action est procéssée par redux store, on la reçoit.
     return action$
         .ofType(StoriesActionsEnum.LOAD_DATA)
         .switchMap(()=> {
