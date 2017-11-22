@@ -17,6 +17,12 @@ const initialState = {
 
 export function usersReducer(state = initialState, action) {
     switch (action.type) {
+        case UsersActionsEnum.FETCH_USER_ACTION :
+            return {
+                ...state,
+                current: null,
+                loading: true
+            }
         default : return state;
     }
 }
