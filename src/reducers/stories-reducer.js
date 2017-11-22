@@ -12,7 +12,7 @@ const stories = [
 ];
 
 const initialState = {
-    items: []
+    users: []
 };
 
 // le reducer prend un state, et une action. Il fait le routage des actions
