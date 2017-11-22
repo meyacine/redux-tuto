@@ -23,6 +23,12 @@ export function usersReducer(state = initialState, action) {
                 current: null,
                 loading: true
             }
+        case UsersActionsEnum.FETCH_USER_FULFILLED_ACTION :
+            return {
+                ...state,
+                current: action.payload,
+                loading: false
+            }
         default : return state;
     }
 }

@@ -10,8 +10,9 @@ export function fetchUserAction(login){
     }
 }
 
-export function fetchUserFulfilledAction(){
+export function fetchUserFulfilledAction(user){
     return {
-        type : UsersActionsEnum.FETCH_USER_FULFILLED_ACTION
+        type : UsersActionsEnum.FETCH_USER_FULFILLED_ACTION,
+        payload : user
     }
 }

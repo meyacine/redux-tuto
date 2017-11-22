@@ -9,7 +9,7 @@ function loadUserEpic(action$) {
         .switchMap(({payload}) => { // destructuration de l'action
             return Observable.ajax.getJSON(`https://api.github.com/users/${payload}`)
                 .map(user => {
-                    fetchUserFulfilledAction(user);
+                    return fetchUserFulfilledAction(user);
                 })
         })
 }
